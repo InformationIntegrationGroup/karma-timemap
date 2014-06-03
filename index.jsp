@@ -70,8 +70,8 @@ and related projects, please see: http://www.isi.edu/integration
         <link rel="stylesheet" type="text/css" href="./css/pyTransform.css?<jsp:include page='version.jsp' />" />
         <link rel="stylesheet" type="text/css" href="./css/cleaningChart.css?<jsp:include page='version.jsp' />" />
         
-		<link href="./css/timelineTest.css?<jsp:include page='version.jsp' />" type="text/css" rel="stylesheet" />
-		<link href="./css/timeline-2.3.0.css?<jsp:include page='version.jsp' />" type="text/css" rel="stylesheet" />
+	<link href="./css/timelineTest.css?<jsp:include page='version.jsp' />" type="text/css" rel="stylesheet" />
+	<link href="./css/timeline-2.3.0.css?<jsp:include page='version.jsp' />" type="text/css" rel="stylesheet" />
       
 		<style type="text/css">
 			div.sticky {

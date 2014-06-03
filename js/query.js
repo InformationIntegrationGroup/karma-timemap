@@ -1,6 +1,5 @@
 var dataPoints = "";
 function timlineQuery() {
-	alert("Test");
 	var pointQuery = "prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "+
 				"prefix gml: <http://www.opengis.net/gml/> "+
 				"prefix geo2003: <http://www.w3.org/2003/01/geo/wgs84_pos#>"+
@@ -142,10 +141,11 @@ function polygonDisplay(binding) {
 		result = result + "\"polygon\" : [";
 		var coordinates = binding[i].positions.value;
 		coordinates = $.trim(coordinates);
-		coordinates = coordinates.substring(11,coordinates.length - 1);
+		coordinates = coordinates.substring(9,coordinates.length - 1);
 		var markers = coordinates.split(",");
 		for (var j = 0; j < markers.length - 1; j++) {
 			var latlong = markers[j];
+			latlong = $.trim(latlong);
 			latlong = latlong.split(" ");
 			var lat = latlong[0];
 			var lon = latlong[1];
@@ -212,6 +212,7 @@ function sparqlQuery(query, baseURL, format) {
 	// Response handlers.
 	xhr.onload = function() {
 		if (xhr.responseText) {
+			console.log(xhr.responseText);
 			var results = JSON.parse(xhr.responseText);
 			var binding = results.results.bindings;
 			// dataPoints = display(binding);
