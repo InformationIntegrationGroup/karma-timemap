@@ -1,0 +1,39 @@
+{
+    "LineID": "TestLine",
+    "Color": "red",
+    "Width": "5",
+    "hasVertices": [
+        {
+            "Sequence": "0",
+            "Latitude": "48.86471476",
+            "Longitude": "2.28515625",
+            "PointId": "Point0",
+            "start": "4/2/2013",
+            "end": "5/7/2013"
+        },
+        {
+            "Sequence": "1",
+            "Latitude": "45.82879925",
+            "Longitude": "4.74609375",
+            "PointId": "Point1",
+            "start": "4/2/2013",
+            "end": "5/7/2013"
+        },
+        {
+            "Sequence": "2",
+            "Latitude": "45.49094569",
+            "Longitude": "9.140625",
+            "PointId": "Point2",
+            "start": "5/7/2013",
+            "end": "6/7/2013"
+        },
+        {
+            "Sequence": "3",
+            "Latitude": "41.9349765",
+            "Longitude": "12.39257813",
+            "PointId": "Point3",
+            "start": "6/7/2013",
+            "end": "8/7/2013"
+        }
+    ]
+}
