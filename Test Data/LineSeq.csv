@@ -1,0 +1,5 @@
+LineID,Color,Width,Sequence,Latitude,Longitude,PointId,start,end
+TestLine,red,5,0,48.86471476,2.28515625,Point0,4/2/2013,5/7/2013
+TestLine,red,5,1,45.82879925,4.74609375,Point1,4/2/2013,5/7/2013
+TestLine,red,5,2,45.49094569,9.140625,Point2,5/7/2013,6/7/2013
+TestLine,red,5,3,41.9349765,12.39257813,Point3,6/7/2013,8/7/2013

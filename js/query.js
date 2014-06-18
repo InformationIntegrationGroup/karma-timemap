@@ -1,5 +1,70 @@
 var dataPoints = "";
-function timlineQuery() {
+function showTimeMapViewForWorksheet() {
+    var state = $(this).data("state");
+    var worksheetId = $(this).data("worksheetId");
+    var worksheetPanel = $("div#"+worksheetId);
+    
+    // Change from table to map if current state is table
+    if(state == "table") {
+        var info = new Object();
+        info["workspaceId"] = $.workspaceGlobalInformation.id;
+        info["worksheetId"] = worksheetId;
+
+        var timemapPanel = $("<div>").width(800).height(650).attr("id","timemap");
+        var timelinecontainer = $("<div>").height(200).attr("id","timelinecontainer");
+        var timeline = $("<div>").attr("id","timeline");
+        var mapcontainer = $("<div>").height(400).attr("id","mapcontainer");
+        var map = $("<div>").attr("id","map");
+        var worksheetPanel = $("div#"+worksheetId);
+        
+        var mapPanel = $("<div>").addClass("mapViewPanel").width(800).height(650).attr("id","map_canvas_" + worksheetId);
+        var tableDiv = $("div.table-data-container", worksheetPanel);
+
+        timelinecontainer.append(timeline);
+        mapcontainer.append(map);
+        timemapPanel.append(timelinecontainer);
+        timemapPanel.append(mapcontainer);
+        
+        timemapPanel.insertAfter(tableDiv);
+
+		showLoading(worksheetId);
+        timelineQuery(worksheetId);
+		hideLoading(worksheetId);
+        
+        $("div#svgDiv_" + worksheetId, worksheetPanel).hide();
+        $("div.table-container", worksheetPanel).hide();
+        
+        tableDiv.hide();
+        // Toggle the icon and state of the div
+        var iconDiv = $("div.toggleTimeMapView", worksheetPanel);   
+        $("img", iconDiv).attr("src","images/table.png");
+        $(iconDiv).data("state", "map");
+        
+        // Change the tooltip
+        $(iconDiv).qtip({
+           content: {
+              text: 'View as table'
+           }, style: {
+              classes: 'ui-tooltip-light ui-tooltip-shadow'
+           }
+        });
+
+    } else if (state == "map") {    // Change from map to table
+        // Remove the Timemap panel
+    	$("div#timemap", worksheetPanel).remove();
+        $("div#svgDiv_" + worksheetId, worksheetPanel).show();
+        $("div.table-container", worksheetPanel).show();
+        $("div.table-data-container", worksheetPanel).show();
+        $("div#"+worksheetId + "TableDiv", worksheetPanel).show();
+        $(this).data("state", "table").qtip({
+           content: {
+              text: 'View as map'
+           }
+        });
+        $("div.toggleTimeMapView img", worksheetPanel).attr("src","images/circle-6.png");
+    }
+}
+function timelineQuery() {
 	var pointQuery = "prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "+
 				"prefix gml: <http://www.opengis.net/gml/> "+
 				"prefix geo2003: <http://www.w3.org/2003/01/geo/wgs84_pos#>"+
@@ -249,7 +314,6 @@ function polyLineDisplay(binding) {
 		}
 	}
 	result = result + "]";
-	console.log(result);
 	return result;
 }
 
@@ -273,7 +337,7 @@ function sparqlQuery(query, baseURL, format) {
 	}
 	var queryURL = baseURL + '?' + querypart;
 
-	console.log(queryURL);
+	// console.log(queryURL);
 	
 	var xhr = createCORSRequest('GET', queryURL);
 	if (!xhr) {
@@ -283,7 +347,7 @@ function sparqlQuery(query, baseURL, format) {
 	// Response handlers.
 	xhr.onload = function() {
 		if (xhr.responseText) {
-			console.log(xhr.responseText);
+			// console.log(xhr.responseText);
 			var results = JSON.parse(xhr.responseText);
 			var binding = results.results.bindings;
 			// dataPoints = display(binding);
@@ -321,7 +385,7 @@ function createCORSRequest(method, url) {
 
 
 function initTimemap(dataPoints) {
-	// alert(dataPoints);
+	// console.log(dataPoints);
 	SimileAjax.History.enabled = false;
 	var tm = TimeMap.init({
         mapId: "map",               // Id of map div element (required)

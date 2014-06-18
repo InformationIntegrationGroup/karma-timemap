@@ -14,11 +14,11 @@ div#help {
 }
 
 div#timemap {
-	padding: 1em;
+	/*padding: 1em;*/
 }
 
 div#timelinecontainer {
-	width: 100%;
+	width: 800px;
 	height: 200px;
 }
 
@@ -30,13 +30,13 @@ div#timeline {
 }
 
 div#mapcontainer {
-	width: 100%;
+	width: 800px;
 	height: 400px;
 }
 
 div#map {
-	width: 100%;
-	height: 100%;
+	width: 800px;
+	height: 400px;
 	background: #EEEEEE;
 }
 
@@ -55,4 +55,15 @@ div.custominfostyle {
 	font-size: 1.5em;
 	font-style: italic;
 	width: 20em;
+}
+
+div.toggleTimeMapView {
+    display: inline;
+	cursor: pointer;
+}
+
+div.toggleTimeMapView img {
+	width: 18px;
+    height: 18px;
+    padding: 2px;
 }
