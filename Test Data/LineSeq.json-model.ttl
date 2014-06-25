@@ -1,0 +1,234 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix gml: <http://www.opengis.net/gml/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo-vis: <http://www.isi.edu/karma/visualization/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo2003: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geo: <http://www.georss.org/georss/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node18rabd568x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "LineSeq.json" ;
+	km-dev:modelPublicationTime "1403728073929"^^xsd:long ;
+	km-dev:modelVersion "1.3" ;
+	km-dev:hasWorksheetHistory "[{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"LineID\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.isi.edu/karma/visualization/title\",\"isPrimary\":true,\"DomainLabel\":\"gml:LineString1 (add)\",\"DomainId\":\"http://www.opengis.net/gml/LineString\",\"DomainUri\":\"http://www.opengis.net/gml/LineString\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"Width\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.isi.edu/karma/visualization/lineWidth\",\"isPrimary\":true,\"DomainLabel\":\"gml:LineString1\",\"DomainId\":\"http://www.opengis.net/gml/LineString1\",\"DomainUri\":\"http://www.opengis.net/gml/LineString1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"Color\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.isi.edu/karma/visualization/hasColor\",\"isPrimary\":true,\"DomainLabel\":\"gml:LineString1\",\"DomainId\":\"http://www.opengis.net/gml/LineString1\",\"DomainUri\":\"http://www.opengis.net/gml/LineString1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"hasVertices\"},{\"columnName\":\"Latitude\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.w3.org/2003/01/geo/wgs84_pos#lat\",\"isPrimary\":true,\"DomainLabel\":\"gml:Point1 (add)\",\"DomainId\":\"http://www.opengis.net/gml/Point\",\"DomainUri\":\"http://www.opengis.net/gml/Point\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"hasVertices\"},{\"columnName\":\"Longitude\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.w3.org/2003/01/geo/wgs84_pos#long\",\"isPrimary\":true,\"DomainLabel\":\"gml:Point1\",\"DomainId\":\"http://www.opengis.net/gml/Point1\",\"DomainUri\":\"http://www.opengis.net/gml/Point1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"hasVertices\"},{\"columnName\":\"PointId\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.isi.edu/karma/visualization/title\",\"isPrimary\":true,\"DomainLabel\":\"gml:Point1\",\"DomainId\":\"http://www.opengis.net/gml/Point1\",\"DomainUri\":\"http://www.opengis.net/gml/Point1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":true,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"hasVertices\"},{\"columnName\":\"end\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.isi.edu/karma/visualization/end-time\",\"isPrimary\":true,\"DomainLabel\":\"gml:Point1\",\"DomainId\":\"http://www.opengis.net/gml/Point1\",\"DomainUri\":\"http://www.opengis.net/gml/Point1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"hasVertices\"},{\"columnName\":\"start\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"FullType\":\"http://www.isi.edu/karma/visualization/end-time\",\"isPrimary\":true,\"DomainLabel\":\"gml:Point1\",\"DomainId\":\"http://www.opengis.net/gml/Point1\",\"DomainUri\":\"http://www.opengis.net/gml/Point1\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"},{\"tags\":[\"Modeling\"],\"inputParameters\":[{\"name\":\"hNodeId\",\"value\":[{\"columnName\":\"hasVertices\"},{\"columnName\":\"Sequence\"}],\"type\":\"hNodeId\"},{\"name\":\"SemanticTypesArray\",\"value\":[{\"isPrimary\":true,\"FullType\":\"http://www.isi.edu/karma/visualization/sequence\",\"DomainLabel\":\"gml:Point1\",\"DomainId\":\"http://www.opengis.net/gml/Point1\",\"DomainUri\":\"http://www.opengis.net/gml/Point\"}],\"type\":\"other\"},{\"name\":\"worksheetId\",\"value\":\"W\",\"type\":\"worksheetId\"},{\"name\":\"isKey\",\"value\":false,\"type\":\"other\"},{\"name\":\"trainAndShowUpdates\",\"value\":false,\"type\":\"other\"},{\"name\":\"rdfLiteralType\",\"value\":\"\",\"type\":\"other\"}],\"commandName\":\"SetSemanticTypeCommand\"}]" .
+
+km-dev:TriplesMap_8cb7ab3e-8383-4ebc-946f-b1c54d627836 a rr:TriplesMap .
+
+_:node18rabd568x1 km-dev:hasTriplesMap km-dev:TriplesMap_8cb7ab3e-8383-4ebc-946f-b1c54d627836 .
+
+km-dev:TriplesMap_8cb7ab3e-8383-4ebc-946f-b1c54d627836 km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x2 rr:tableName "LineSeq.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasLogicalTable _:node18rabd568x2 .
+
+km-dev:TriplesMap_8cb7ab3e-8383-4ebc-946f-b1c54d627836 rr:logicalTable _:node18rabd568x2 ;
+	rr:subjectMap _:node18rabd568x3 .
+
+_:node18rabd568x1 km-dev:hasSubjectMap _:node18rabd568x3 .
+
+_:node18rabd568x3 km-dev:isPartOfMapping _:node18rabd568x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.opengis.net/gml/LineString1" ;
+	rr:class gml:LineString ;
+	rr:template "http://localhost:8080/source/{LineID}" ;
+	a km-dev:steinerTreeRootNode .
+
+_:node18rabd568x4 rr:predicate geo-vis:hasColor .
+
+_:node18rabd568x5 rr:column "Color" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasObjectMap _:node18rabd568x5 .
+
+_:node18rabd568x4 rr:objectMap _:node18rabd568x5 .
+
+km-dev:TriplesMap_8cb7ab3e-8383-4ebc-946f-b1c54d627836 rr:predicateObjectMap _:node18rabd568x4 .
+
+_:node18rabd568x4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasPredicateObjectMap _:node18rabd568x4 .
+
+_:node18rabd568x6 rr:predicate geo-vis:lineWidth .
+
+_:node18rabd568x7 rr:column "Width" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasObjectMap _:node18rabd568x7 .
+
+_:node18rabd568x6 rr:objectMap _:node18rabd568x7 .
+
+km-dev:TriplesMap_8cb7ab3e-8383-4ebc-946f-b1c54d627836 rr:predicateObjectMap _:node18rabd568x6 .
+
+_:node18rabd568x6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasPredicateObjectMap _:node18rabd568x6 .
+
+_:node18rabd568x8 rr:predicate geo-vis:title .
+
+_:node18rabd568x9 rr:column "LineID" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasObjectMap _:node18rabd568x9 .
+
+_:node18rabd568x8 rr:objectMap _:node18rabd568x9 .
+
+km-dev:TriplesMap_8cb7ab3e-8383-4ebc-946f-b1c54d627836 rr:predicateObjectMap _:node18rabd568x8 .
+
+_:node18rabd568x8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasPredicateObjectMap _:node18rabd568x8 .
+
+_:node18rabd568x10 rr:predicate geo-vis:vertex .
+
+km-dev:RefObjectMap_4f66ada6-07d4-4612-82cb-816a44e63d5c a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_955e4f34-e746-475c-9d39-a53e389814d7 ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasObjectMap km-dev:RefObjectMap_4f66ada6-07d4-4612-82cb-816a44e63d5c .
+
+_:node18rabd568x10 rr:objectMap km-dev:RefObjectMap_4f66ada6-07d4-4612-82cb-816a44e63d5c .
+
+km-dev:TriplesMap_8cb7ab3e-8383-4ebc-946f-b1c54d627836 rr:predicateObjectMap _:node18rabd568x10 .
+
+_:node18rabd568x10 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasPredicateObjectMap _:node18rabd568x10 .
+
+km-dev:TriplesMap_955e4f34-e746-475c-9d39-a53e389814d7 a rr:TriplesMap .
+
+_:node18rabd568x1 km-dev:hasTriplesMap km-dev:TriplesMap_955e4f34-e746-475c-9d39-a53e389814d7 .
+
+km-dev:TriplesMap_955e4f34-e746-475c-9d39-a53e389814d7 km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x11 rr:tableName "LineSeq.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasLogicalTable _:node18rabd568x11 .
+
+km-dev:TriplesMap_955e4f34-e746-475c-9d39-a53e389814d7 rr:logicalTable _:node18rabd568x11 ;
+	rr:subjectMap _:node18rabd568x12 .
+
+_:node18rabd568x1 km-dev:hasSubjectMap _:node18rabd568x12 .
+
+_:node18rabd568x12 km-dev:isPartOfMapping _:node18rabd568x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.opengis.net/gml/Point1" ;
+	rr:class gml:Point ;
+	rr:template "http://localhost:8080/source/{[\"hasVertices\",\"PointId\"]}" .
+
+_:node18rabd568x13 rr:predicate geo-vis:end-time .
+
+_:node18rabd568x14 rr:column "[\"hasVertices\",\"end\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasObjectMap _:node18rabd568x14 .
+
+_:node18rabd568x13 rr:objectMap _:node18rabd568x14 .
+
+km-dev:TriplesMap_955e4f34-e746-475c-9d39-a53e389814d7 rr:predicateObjectMap _:node18rabd568x13 .
+
+_:node18rabd568x13 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasPredicateObjectMap _:node18rabd568x13 .
+
+_:node18rabd568x15 rr:predicate geo-vis:end-time .
+
+_:node18rabd568x16 rr:column "[\"hasVertices\",\"start\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasObjectMap _:node18rabd568x16 .
+
+_:node18rabd568x15 rr:objectMap _:node18rabd568x16 .
+
+km-dev:TriplesMap_955e4f34-e746-475c-9d39-a53e389814d7 rr:predicateObjectMap _:node18rabd568x15 .
+
+_:node18rabd568x15 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasPredicateObjectMap _:node18rabd568x15 .
+
+_:node18rabd568x17 rr:predicate geo-vis:sequence .
+
+_:node18rabd568x18 rr:column "[\"hasVertices\",\"Sequence\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasObjectMap _:node18rabd568x18 .
+
+_:node18rabd568x17 rr:objectMap _:node18rabd568x18 .
+
+km-dev:TriplesMap_955e4f34-e746-475c-9d39-a53e389814d7 rr:predicateObjectMap _:node18rabd568x17 .
+
+_:node18rabd568x17 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasPredicateObjectMap _:node18rabd568x17 .
+
+_:node18rabd568x19 rr:predicate geo-vis:title .
+
+_:node18rabd568x20 rr:column "[\"hasVertices\",\"PointId\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasObjectMap _:node18rabd568x20 .
+
+_:node18rabd568x19 rr:objectMap _:node18rabd568x20 .
+
+km-dev:TriplesMap_955e4f34-e746-475c-9d39-a53e389814d7 rr:predicateObjectMap _:node18rabd568x19 .
+
+_:node18rabd568x19 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasPredicateObjectMap _:node18rabd568x19 .
+
+_:node18rabd568x21 rr:predicate geo2003:lat .
+
+_:node18rabd568x22 rr:column "[\"hasVertices\",\"Latitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasObjectMap _:node18rabd568x22 .
+
+_:node18rabd568x21 rr:objectMap _:node18rabd568x22 .
+
+km-dev:TriplesMap_955e4f34-e746-475c-9d39-a53e389814d7 rr:predicateObjectMap _:node18rabd568x21 .
+
+_:node18rabd568x21 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasPredicateObjectMap _:node18rabd568x21 .
+
+_:node18rabd568x23 rr:predicate geo2003:long .
+
+_:node18rabd568x24 rr:column "[\"hasVertices\",\"Longitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasObjectMap _:node18rabd568x24 .
+
+_:node18rabd568x23 rr:objectMap _:node18rabd568x24 .
+
+km-dev:TriplesMap_955e4f34-e746-475c-9d39-a53e389814d7 rr:predicateObjectMap _:node18rabd568x23 .
+
+_:node18rabd568x23 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node18rabd568x1 .
+
+_:node18rabd568x1 km-dev:hasPredicateObjectMap _:node18rabd568x23 .
